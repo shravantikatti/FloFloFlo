@@ -1,0 +1,61 @@
+{
+    "caseSensitive": false,
+    "properties": {
+        "name": "main",
+        "environment": {
+            "type": "noflo-nodejs"
+        }
+    },
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {
+        "filesystem/ReadFile_f0k7p": {
+            "component": "filesystem/ReadFile",
+            "metadata": {
+                "label": "ReadFile",
+                "x": 72,
+                "y": 324,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "core/Output_9nn66": {
+            "component": "core/Output",
+            "metadata": {
+                "label": "Output",
+                "x": 252,
+                "y": 324,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "connections": [
+        {
+            "src": {
+                "process": "filesystem/ReadFile_f0k7p",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "core/Output_9nn66",
+                "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "data": "utf-8",
+            "tgt": {
+                "process": "filesystem/ReadFile_f0k7p",
+                "port": "encoding"
+            }
+        },
+        {
+            "data": "Dataframe.csv",
+            "tgt": {
+                "process": "filesystem/ReadFile_f0k7p",
+                "port": "in"
+            }
+        }
+    ]
+}

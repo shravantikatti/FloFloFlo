@@ -1,0 +1,24 @@
+{
+  "name": "flo",
+  "version": "1.0.0",
+  "description": "Simple example for nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fahamk14",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "fahamkhan0908@gmail.com"
+  },
+  "keywords": [
+    "noflo"
+  ],
+  "dependencies": {
+    "noflo": "^1.1.3",
+    "noflo-core": "^0.6.1",
+    "noflo-filesystem": "^2.0.1",
+    "noflo-nodejs": "^0.11.1"
+  }
+}

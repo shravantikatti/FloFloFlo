@@ -1,0 +1,15 @@
+{
+  "id": "7db17f3a-20ad-4504-a03f-a4f577e88fb8",
+  "label": "flo NoFlo runtime",
+  "secret": "momugujuru",
+  "permissions": {
+    "momugujuru": [
+      "protocol:component",
+      "protocol:runtime",
+      "protocol:graph",
+      "protocol:network",
+      "component:getsource",
+      "component:setsource"
+    ]
+  }
+}
